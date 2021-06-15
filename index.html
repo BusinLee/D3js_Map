@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  </head>  
+<body>
+    <div id="wrapper">
+        <div class="scatterplot-wrapper"></div>
+        <div class="legend-wrapper">
+          <h1>Population density</h1>
+          <div class="index-level-bar">
+            <div class="bar-legend"></div>
+            <div class="bar-label">Lower denisty</div>
+            <div class="bar-label second">Higher denisty</div>
+            <div style="clear: both;"></div>
+          </div>
+        </div>
+        <div id="info">
+          <div id="header-info">
+            <table id="feature-info">
+              <tbody>
+                <tr>
+                  <th class="name" style="width:25%;">Name</th>
+                  <th class="population" style="width:20%;">Population</th>
+                  <th class="area" style="width:15%;">Area</th>
+                  <th class="density" style="width:15%;">Density</th>
+                  <th class="capital" style="width:25%;">Capital</th>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div id="loading" class="hidden">
+            <a class="fa fa-spinner"></a>
+          </div>
+        </div>
+        <div id="map-canvas"></div>
+    </div>
+    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="https://d3js.org/topojson.v1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="main.js"></script>
+
+</body>
+  

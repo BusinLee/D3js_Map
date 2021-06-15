@@ -1,0 +1,328 @@
+#wrapper {
+    padding-top: 15px;
+  }
+  
+  .bar-label {
+    float: left;
+    margin-top: 5px;
+    line-height: 12px;
+    font-size: 12px;
+    font-family: 'Helvetica';
+  }
+  
+  .bar-label.second {
+    float: right;
+  }
+  
+  table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+    padding: 0px;
+  }
+  
+  th {
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: normal;
+    text-align: left;
+  }
+  
+  th.name {
+    color: #E7BA52;
+  }
+  
+  th.area {
+    color: #FC9E27;
+  }
+  
+  th.population {
+    color: #3A7FA3;
+  }
+  
+  th.density {
+    color: #B5CF6B;
+  }
+  
+  th.capital {
+    color: #D6616B;
+  }
+  
+  th,
+  td {
+    color: #555;
+  }
+  
+  .h2,
+  h2 {
+    font-size: 30px;
+  }
+  
+  .h1,
+  .h2,
+  .h3,
+  h1,
+  h2,
+  h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .scatterplot-wrapper {
+    position: fixed;
+    z-index: 2;
+    left: 15px;
+    bottom: 300px;
+    width: 270px;
+    text-align: center;
+  }
+  
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke-width: 1px;
+    stroke: #e7e7e7;
+    stroke-opacity: .5;
+    shape-rendering: crispEdges;
+  }
+  
+  .axis text {
+    line-height: 12px;
+    font-size: 12px;
+    font-family: 'Helvetica';
+    fill: #666;
+  }
+  
+  .label {
+    line-height: 12px;
+    font-size: 12px;
+    font-family: 'Helvetica';
+  }
+  
+  .scatterplot-wrapper circle {
+    fill-opacity: .75;
+  }
+  
+  .scatterplot-wrapper circle:hover {
+    fill-opacity: 1;
+  }
+  
+  .legend-wrapper {
+    position: fixed;
+    z-index: 2;
+    left: 15px;
+    bottom: 150px;
+    width: 270px;
+    text-align: center;
+  }
+  
+  .legend-wrapper h1 {
+    font: 22px 'oswaldregular';
+  }
+  
+  #map-canvas {
+    width: 900px;
+    margin-left: 290px;
+  }
+  
+  #info {
+    height: 90px;
+  }
+  
+  #header-info {
+    margin-left: 290px;
+  }
+  
+  #feature-info {
+    width: 650px;
+  }
+  
+  #loading {
+    width: 50px;
+    margin: 0 auto;
+  }
+  
+  
+  /* On mouse hover, lighten state color */
+  
+  .feature:hover {
+    fill: yellow;
+    fill-opacity: .35;
+  }
+  
+  .bubble.highlight {
+    stroke: #3A7FA3;
+    fill-opacity: .75;
+  }
+  
+  .active .feature {
+    fill: yellow;
+    opacity: 0.75;
+  }
+  
+  .city-label {
+    font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    pointer-events: none;
+    fill: #444;
+    fill-opacity: .75;
+  }
+  
+  .state-label {
+    fill: #777 !important;
+    fill-opacity: .5;
+    font-size: 8px;
+    text-anchor: middle;
+    pointer-events: none;
+  }
+  
+  .feature,
+  .legend {
+    cursor: pointer;
+  }
+  
+  .country-boundary {
+    fill: none;
+    stroke: #37C3BC;
+    stroke-linejoin: round;
+  }
+  
+  .state-boundary {
+    fill: none;
+    stroke: #003568;
+    stroke-dasharray: 5, 3;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    vector-effect: non-scaling-stroke;
+  }
+  
+  
+  /* http://colorbrewer2.org/ */
+  
+  .q0-9 {
+    fill: #F7FCF0;
+  }
+  
+  .q1-9 {
+    fill: #E0F3DB;
+  }
+  
+  .q2-9 {
+    fill: #CCEBC5;
+  }
+  
+  .q3-9 {
+    fill: #A8DDB5;
+  }
+  
+  .q4-9 {
+    /* lighten #7BCCC4 */
+    fill: #BBF3FF;
+  }
+  
+  .q5-9 {
+    /* lighten #4EB3D3 */
+    fill: #A1D9FF;
+  }
+  
+  .q6-9 {
+    /* lighten #2B8CBE */
+    fill: #87BFFF;
+  }
+  
+  .q7-9 {
+    /* lighten #0868AC */
+    fill: #6EA6E7;
+  }
+  
+  .q8-9 {
+    /* lighten #084081 */
+    fill: #558DCE;
+  }
+  
+  .state-label.q5-9 {
+    fill: #A8DDB5 !important;
+  }
+  
+  .state-label.q6-9 {
+    fill: #CCEBC5 !important;
+  }
+  
+  .state-label.q7-9 {
+    fill: #E0F3DB !important;
+  }
+  
+  .state-label.q8-9 {
+    fill: #F7FCF0 !important;
+  }
+  
+  .overlay {
+    fill: none;
+    pointer-events: all;
+  }
+  
+  .fa-spinner {
+    -webkit-animation: spin 1300ms infinite linear;
+    -moz-animation: spin 1300ms infinite linear;
+    -ms-animation: spin 1300ms infinite linear;
+    -o-animation: spin 1300ms infinite linear;
+    animation: spin 1300ms infinite linear;
+    font-size: 41px;
+    text-decoration: none;
+    color: #C0C0C0;
+  }
+  
+  .hidden {
+    display: none;
+    visibility: hidden;
+  }
+  
+  div.tooltip {
+    position: absolute;
+    text-align: center;
+    border-radius: 4px;
+    pointer-events: none;
+    font-family: arial, helvetica, sans-serif;
+    font-size: 12px;
+    border: solid 1px #ccc;
+    background: rgba(255, 255, 255, .75);
+    padding: 4px 10px;
+    position: absolute;
+    z-index: 1000;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .2);
+    pointer-events: none;
+    width: 100px;
+    margin-left: -55px;
+  }
+  
+  @-webkit-keyframes spin {
+    to {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  
+  @-moz-keyframes spin {
+    to {
+      -moz-transform: rotate(360deg);
+    }
+  }
+  
+  @-ms-keyframes spin {
+    to {
+      -ms-transform: rotate(360deg);
+    }
+  }
+  
+  @-o-keyframes spin {
+    to {
+      -o-transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
