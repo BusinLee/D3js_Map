@@ -1,0 +1,159 @@
+::ng-deep
+.map {
+    padding-top: 15px;
+    
+    #loading {
+      width: 50px;
+      margin: 0 auto;
+
+      .fa-spinner {
+        -webkit-animation: spin 1300ms infinite linear;
+        -moz-animation: spin 1300ms infinite linear;
+        -ms-animation: spin 1300ms infinite linear;
+        -o-animation: spin 1300ms infinite linear;
+        animation: spin 1300ms infinite linear;
+        font-size: 41px;
+        text-decoration: none;
+        color: #C0C0C0;
+      }
+    }
+    
+    #map-canvas {
+      width: 900px;
+      margin-left: 290px;
+
+      .feature:hover {
+        fill: yellow;
+        fill-opacity: .35;
+      }
+      
+      .state-label {
+        color: red;
+        fill: #777 !important;
+        fill-opacity: .5;
+        font-size: 8px;
+        text-anchor: middle;
+        pointer-events: none;
+  
+        &.q5-9 {
+          fill: #A8DDB5 !important;
+        }
+        
+        &.q6-9 {
+          fill: #CCEBC5 !important;
+        }
+        
+        &.q7-9 {
+          fill: #E0F3DB !important;
+        }
+        
+        &.q8-9 {
+          fill: #F7FCF0 !important;
+        }
+  
+      }
+      
+      .country-boundary {
+        fill: none;
+        stroke: #37C3BC;
+        stroke-linejoin: round;
+      }
+      
+      .state-boundary {
+        fill: none;
+        stroke: #003568;
+        stroke-dasharray: 5, 3;
+        stroke-linejoin: round;
+        stroke-linecap: round;
+      }
+      
+      .q0-9 {
+        fill: #F7FCF0;
+      }
+      
+      .q1-9 {
+        fill: #E0F3DB;
+      }
+      
+      .q2-9 {
+        fill: #CCEBC5;
+      }
+      
+      .q3-9 {
+        fill: #A8DDB5;
+      }
+      
+      .q4-9 {
+        fill: #BBF3FF;
+      }
+      
+      .q5-9 {
+        fill: #A1D9FF;
+      }
+      
+      .q6-9 {
+        fill: #87BFFF;
+      }
+      
+      .q7-9 {
+        fill: #6EA6E7;
+      }
+      
+      .q8-9 {
+        fill: #558DCE;
+      }
+      
+      .hidden {
+        display: none;
+      }
+      
+      .tooltip {
+        position: absolute;
+        text-align: center;
+        border-radius: 4px;
+        pointer-events: none;
+        font-family: arial, helvetica, sans-serif;
+        font-size: 12px;
+        border: solid 1px #ccc;
+        background: rgba(255, 255, 255, .75);
+        padding: 4px 10px;
+        position: absolute;
+        z-index: 1000;
+        box-shadow: 0 0 8px rgba(0, 0, 0, .2);
+        pointer-events: none;
+        width: 100px;
+        margin-left: -55px;
+      }   
+    }
+    
+    @-webkit-keyframes spin {
+      to {
+        -webkit-transform: rotate(360deg);
+      }
+    }
+    
+    @-moz-keyframes spin {
+      to {
+        -moz-transform: rotate(360deg);
+      }
+    }
+    
+    @-ms-keyframes spin {
+      to {
+        -ms-transform: rotate(360deg);
+      }
+    }
+    
+    @-o-keyframes spin {
+      to {
+        -o-transform: rotate(360deg);
+      }
+    }
+    
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    
+}
